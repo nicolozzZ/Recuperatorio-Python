@@ -1,3 +1,4 @@
+import os
 list = ["manzana", "banana", "pera", "manzana", "naranja", "pera", "pera"]
 
 def contarElementos(list):
@@ -5,7 +6,7 @@ def contarElementos(list):
     for i in range(len(list)):
         for j in range (len(list[i])):
             dicc.setdefault(list[i],len(list[i]))
-    return dicc
+    return str(dicc)
     
 print(contarElementos(list))
 
